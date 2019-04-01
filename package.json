@@ -1,0 +1,67 @@
+{
+  "name": "typedoc-plugin-barrel-export",
+  "version": "1.0.0",
+  "description": "typedoc plugin to read barrel export files and create the correct documentation",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run lint && npm run build",
+    "lint": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManRueda/typedoc-plugin-barrel-export.git"
+  },
+  "keywords": [
+    "typedocplugin",
+    "typedoc",
+    "npm",
+    "barrel",
+    "export"
+  ],
+  "author": "Manuel Rueda <manuel.rueda.un@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ManRueda/typedoc-plugin-barrel-export/issues"
+  },
+  "homepage": "https://github.com/ManRueda/typedoc-plugin-barrel-export#readme",
+  "devDependencies": {
+    "@types/parse-github-url": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "eslint-config-xo-typescript": "^0.8.0",
+    "prettier": "^1.16.4",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.3.3333",
+    "xo": "^0.24.0"
+  },
+  "peerDependencies": {
+    "typedoc": "^0.14.2"
+  },
+  "dependencies": {
+    "is-git-url": "^1.0.0",
+    "parse-github-url": "^1.0.2"
+  },
+  "files": [
+    "*.js",
+    "*.d.ts",
+    "yarn.lock"
+  ],
+  "xo": {
+    "extends": "xo-typescript",
+    "prettier": true,
+    "space": 2,
+    "files": [
+      "*.js",
+      "*.ts"
+    ],
+    "rules": {
+      "@typescript-eslint/indent": [
+        "error",
+        2
+      ]
+    },
+    "extensions": [
+      "ts"
+    ]
+  }
+}
